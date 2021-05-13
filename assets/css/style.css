@@ -25,7 +25,7 @@ Table of Css Content
 /* CSS Variables */
 
 :root {
-  --white-color: #f7f7f7;
+  --white-color: #ffffff;
   --light_grey-color: #929aab;
   --dark_grey-color: #393e46;
 }
@@ -1155,6 +1155,81 @@ select:focus {
   font-weight: 500;
 }
 
+.skills {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  margin-top: 1rem;
+}
+
+.skills .skill-item + .skill-item {
+  margin-left: 0.5rem;
+}
+
+.skills .skill-item .fab {
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: color 0.4s ease-in-out;
+}
+
+.skills .HTML .fab:hover {
+  color: darkorange;
+}
+
+.skills .CSS .fab:hover {
+  color: darkblue;
+}
+
+.skills .SASS .fab:hover {
+  color: purple;
+}
+
+.skills .JS .fab:hover {
+  color: rgb(214, 214, 63);
+}
+
+.skills .GSAP {
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.skills .GSAP:hover {
+  color: green;
+  transition: color 0.4s ease-in-out;
+}
+
+.skills .Git .fab:hover {
+  color: orangered;
+}
+
+.skills .BitBucket .fab:hover {
+  color: blue;
+}
+
+.skills .GitHub .fab:hover {
+  color: var(--dark_grey-color);
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5%;
+  margin-top: 1rem;
+}
+
+.social-media .social-media-item .fab {
+  font-size: 1.6rem;
+}
+
+.social-media .linkedIn a {
+  color: var(--dark_grey-color);
+}
+
+.social-media .linkedIn .fab:hover {
+  color: darkblue;
+}
+
 .social_home li a {
   font-size: 18px;
   color: #ffffff;
@@ -1382,6 +1457,10 @@ select:focus {
 }
 .w-i-d {
   padding-top: 63px;
+}
+
+.service-area-wrapper {
+  margin-top: 2em;
 }
 .single-service {
   display: block;
