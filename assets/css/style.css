@@ -630,6 +630,7 @@ select:focus {
 .section-heading {
   text-align: center;
   margin-bottom: 31px;
+  margin-top: 12em;
 }
 
 .section-heading.text-white .title {
@@ -768,7 +769,7 @@ select:focus {
 
 .loader-1 .loader-inner {
   position: absolute;
-  border: 4px solid var(--dark_grey-color);
+  border: 4px solid var(--light_grey-color);
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -863,58 +864,6 @@ select:focus {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.video-play-btn {
-  display: inline-block;
-  width: 100px;
-  height: 100px;
-  line-height: 100px;
-  text-align: center;
-  font-size: 28px;
-  background: #fff;
-  border-radius: 50%;
-  position: relative;
-  z-index: 1;
-  color: #fff;
-}
-
-.video-play-btn:before {
-  content: "";
-  position: absolute;
-  z-index: 0;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  display: block;
-  width: 120px;
-  height: 120px;
-  background: #fff;
-  border-radius: 50%;
-  -webkit-animation: pulse-border 1600ms ease-out infinite;
-  animation: pulse-border 1600ms ease-out infinite;
-  z-index: -1;
-}
-
-.video-play-btn i {
-  background: -webkit-linear-gradient(to bottom, #4a00e0, #8e2de2);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-moz-gradient(to bottom, #4a00e0, #8e2de2);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#4a00e0),
-    to(#8e2de2)
-  );
-  background: -webkit-linear-gradient(top, #4a00e0, #8e2de2);
-  background: -o-linear-gradient(top, #4a00e0, #8e2de2);
-  background: linear-gradient(to bottom, #4a00e0, #8e2de2);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 .modal .modal-content {
   background: #252c48;
 }
@@ -1130,7 +1079,6 @@ select:focus {
   color: var(--dark_grey-color);
   margin-top: 20px;
   margin-bottom: 0px;
-  /* text-shadow: 3px -3px 10px rgba(0, 0, 0, 0.3); */
 }
 
 .home .name span {
@@ -1455,9 +1403,6 @@ select:focus {
   background: #4285f4;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
 }
-.w-i-d {
-  padding-top: 63px;
-}
 
 .service-area-wrapper {
   margin-top: 2em;
@@ -1575,43 +1520,26 @@ Portfolio Start
   padding-left: 0px;
 }
 
-.project-gallery .project-gallery-filter .project-gallery-menu .filter {
-  font-size: 16px;
-  font-weight: 400;
-  padding: 7px 20px;
-  display: inline-block;
-  border: 1px solid var(--light_grey-color);
-  border-radius: 3px;
-  cursor: pointer;
-  margin: 0px 5px;
-  -webkit-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
-  color: var(--dark_grey-color);
-}
-
-.project-gallery .project-gallery-filter .project-gallery-menu .filter.active,
-.project-gallery .project-gallery-filter .project-gallery-menu .filter:hover {
-  color: var(--white-color);
-  background: var(--light_grey-color);
-}
-
 .project-gallery .project-gallery-item {
-  padding-top: 6px;
+  padding-top: 2em;
 }
 
 .gallery-item-content {
   padding: 0px;
   border-radius: 10px;
-  margin-bottom: 30px;
   display: block;
 }
 
 .gallery-item-content .item-thumbnail {
   position: relative;
   overflow: hidden;
-
+  height: 300px;
   border-radius: 10px;
+}
+
+.gallery-item-content .item-thumbnail img {
+  height: inherit;
+  object-fit: cover;
 }
 
 .gallery-item-content .item-thumbnail .content-overlay {
@@ -1650,6 +1578,9 @@ Portfolio Start
 .gallery-item-content .item-thumbnail:hover .content-overlay {
   opacity: 0.95;
   transform: scale(1);
+  -webkit-box-shadow: 0px 2px 300px -48px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 300px -48px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 300px -48px rgba(0, 0, 0, 0.75);
 }
 
 .portfolios-page {
@@ -1691,12 +1622,9 @@ Portfolio Start
   text-align: left;
 }
 
-.ajax-container iframe {
-  height: 400px !important;
-  width: 100% !important;
-}
 .ajax-container img {
   width: 100%;
+  object-fit: cover;
 }
 
 .ajax-container .project-details-info .info-list li {
