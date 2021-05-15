@@ -1424,6 +1424,7 @@ select:focus {
 
 .single-service img {
   width: 65px;
+  height: 65px;
   margin-bottom: 26px;
 }
 
@@ -1538,6 +1539,7 @@ Portfolio Start
 }
 
 .gallery-item-content .item-thumbnail img {
+  width: 350px;
   height: inherit;
   object-fit: cover;
 }
