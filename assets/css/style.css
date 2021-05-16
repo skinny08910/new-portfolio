@@ -480,7 +480,7 @@ select:focus {
   content: "";
   width: 0;
   height: 100%;
-  background: var(--white-color);
+  background: var(--dark_grey-color);
   position: absolute;
   left: 0;
   top: 0;
@@ -495,7 +495,7 @@ select:focus {
   -webkit-transition-delay: 0s;
   -o-transition-delay: 0s;
   transition-delay: 0s;
-  background: var(--white-color);
+  background: var(--dark_grey-color);
   opacity: 1;
 }
 
@@ -517,13 +517,13 @@ select:focus {
 }
 
 .mybtn-bg {
-  background: var(--light_grey-color);
+  background: var(--white-color);
   border-color: var(--light_grey-color);
-  color: #fff;
+  color: #000;
 }
 
 .mybtn-bg:hover span {
-  color: var(--dark_grey-color);
+  color: var(--white-color);
 }
 
 .mybtn-bord {
@@ -829,6 +829,7 @@ select:focus {
     transform: rotate(-360deg);
   }
 }
+
 .bottomtotop i {
   width: 50px;
   height: 50px;
@@ -1013,7 +1014,7 @@ select:focus {
 }
 
 .home .greeting {
-  background: var(--light_grey-color);
+  background: var(--dark_grey-color);
   color: var(--white-color);
   font-size: 16px;
   font-weight: 600;
@@ -1030,7 +1031,7 @@ select:focus {
   width: 0;
   height: 0;
   border-top: 0px solid transparent;
-  border-left: 10px solid var(--light_grey-color);
+  border-left: 10px solid var(--dark_grey-color);
   border-bottom: 10px solid transparent;
 }
 
@@ -1160,22 +1161,14 @@ select:focus {
 
 .social-media {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  width: 5%;
+  width: 100%;
   margin-top: 1rem;
-}
-
-.social-media .social-media-item .fab {
-  font-size: 1.6rem;
 }
 
 .social-media .linkedIn a {
   color: var(--dark_grey-color);
-}
-
-.social-media .linkedIn .fab:hover {
-  color: darkblue;
 }
 
 .social_home li a {
