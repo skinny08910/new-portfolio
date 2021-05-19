@@ -1514,6 +1514,32 @@ Portfolio Start
   padding-left: 0px;
 }
 
+.project-gallery .project-gallery-filter .project-gallery-menu .filter {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 7px 20px;
+  display: inline-block;
+  border: 1px solid var(--light_grey-color);
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 0px 5px;
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  color: var(--dark_grey-color);
+}
+
+.project-gallery .project-gallery-filter .project-gallery-menu .filter.active,
+.project-gallery .project-gallery-filter .project-gallery-menu .filter:hover {
+  color: var(--white-color);
+  background: var(--light_grey-color);
+}
+
+.project-gallery .project-gallery-filter .project-gallery-menu {
+  margin-bottom: 43px;
+  padding-left: 0px;
+}
+
 .project-gallery .project-gallery-item {
   padding-top: 2em;
 }
@@ -1528,6 +1554,7 @@ Portfolio Start
   position: relative;
   overflow: hidden;
   height: 300px;
+  margin-bottom: 2em;
   border-radius: 10px;
 }
 
