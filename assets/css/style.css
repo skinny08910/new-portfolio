@@ -630,7 +630,7 @@ select:focus {
 .section-heading {
   text-align: center;
   margin-bottom: 31px;
-  margin-top: 12em;
+  margin-top: 5em;
 }
 
 .section-heading.text-white .title {
@@ -1152,6 +1152,10 @@ select:focus {
 }
 
 .skills .BitBucket .fab:hover {
+  color: blue;
+}
+
+.skills .JIRA .fab:hover {
   color: blue;
 }
 

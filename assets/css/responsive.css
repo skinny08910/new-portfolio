@@ -12,6 +12,10 @@
   .about-text {
     padding: 10px 0;
   }
+
+  .section-heading {
+    margin-top: 12rem;
+  }
 }
 
 @media (max-width: 767px) {
@@ -275,7 +279,7 @@
   }
 
   .section-heading {
-    margin-top: 0;
+    margin-top: 6rem;
   }
 }
 
@@ -331,7 +335,7 @@
   }
 
   .section-heading {
-    margin-top: 0;
+    margin-top: 6rem;
   }
 
   .section-heading .s-h-title {
