@@ -671,6 +671,11 @@
     line-height: 28px;
   }
 
+  #typed {
+    font-size: 18px !important;
+    line-height: 28px;
+  }
+
   .mainmenu-area {
     top: 25px;
     right: 25px;
