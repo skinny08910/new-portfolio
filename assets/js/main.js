@@ -40,7 +40,11 @@ $(function ($) {
     var $typed = $("#typed");
     if ($typed.length > 0) {
       $typed.typed({
-        strings: ["SEO", "Email Marketing", "Web Development"],
+        strings: [
+          "AM A Frontend Developer",
+          "DO EMAIL Development",
+          "OPTIMIZE WEBSITES FOR SEO",
+        ],
         stringsElement: null,
         typeSpeed: 70,
         startDelay: 150,

@@ -1104,9 +1104,10 @@ select:focus {
   font-weight: 500;
 }
 
+/* Skills */
 .skills {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 60%;
   margin-top: 1rem;
 }
@@ -1162,6 +1163,32 @@ select:focus {
 .skills .GitHub .fab:hover {
   color: var(--dark_grey-color);
 }
+
+/* Tooltip */
+
+/* .tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 50px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip 
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+*/
 
 .social-media {
   display: flex;
