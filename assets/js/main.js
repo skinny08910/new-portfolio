@@ -40,11 +40,7 @@ $(function ($) {
     var $typed = $("#typed");
     if ($typed.length > 0) {
       $typed.typed({
-        strings: [
-          "AM A Frontend Developer",
-          "DO EMAIL Development",
-          "OPTIMIZE WEBSITES FOR SEO",
-        ],
+        strings: ["AM an Email Developer", "DO Content Editing"],
         stringsElement: null,
         typeSpeed: 70,
         startDelay: 150,
@@ -136,3 +132,12 @@ $(function ($) {
     preLoder.addClass("hide");
   });
 });
+
+let toggleBtn = document.querySelector(".toggle-icon");
+let mobileMenu = document.querySelector(".mainmenu-area");
+
+// toggleBtn.addEventListener("click", function () {
+//   if (toggleBtn.closest("main") === null) {
+//     mobileMenu.classList.remove("show");
+//   }
+// });

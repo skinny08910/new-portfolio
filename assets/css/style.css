@@ -443,6 +443,15 @@ select:focus {
 }
 
 /* Global style */
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+#g-p-f-h {
+  margin-right: 1rem;
+}
+
 .mybtn {
   padding: 8px 30px;
   border-radius: 4px;
@@ -1015,11 +1024,13 @@ select:focus {
 
 .home .greeting {
   background: var(--dark_grey-color);
-  color: var(--white-color);
+  color: var(--white-color) !important;
   font-size: 16px;
   font-weight: 600;
   padding: 3px 10px;
-  position: relative;
+  position: absolute;
+  top: -76%;
+  left: 21%;
   line-height: 26px;
 }
 
@@ -1068,10 +1079,17 @@ select:focus {
   }
 }
 
+.hero-box {
+  width: 80%;
+  margin: 0 auto;
+  /* text-align: center; */
+}
+
 .home .short-info {
   color: var(--dark_grey-color);
   margin-top: 16px;
   margin-bottom: 0px;
+  text-align: center;
 }
 
 .home .name {
@@ -1080,6 +1098,8 @@ select:focus {
   color: var(--dark_grey-color);
   margin-top: 20px;
   margin-bottom: 0px;
+  text-align: center;
+  position: relative;
 }
 
 .home .name span {
@@ -1091,6 +1111,7 @@ select:focus {
   line-height: 31px;
   font-weight: 600;
   color: var(--dark_grey-color);
+  text-align: center;
 }
 
 #typed {
@@ -1108,8 +1129,9 @@ select:focus {
 .skills {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 60%;
-  margin-top: 1rem;
+  margin: 1rem auto 0 auto;
 }
 
 .skills .skill-item + .skill-item {
@@ -1138,7 +1160,17 @@ select:focus {
   color: rgb(214, 214, 63);
 }
 
-.skills .GSAP {
+.skills .CK {
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.skills .CK:hover {
+  color: #ff4000;
+  transition: color 0.4s ease-in-out;
+}
+
+/* .skills .GSAP {
   font-weight: 700;
   cursor: pointer;
 }
@@ -1146,6 +1178,22 @@ select:focus {
 .skills .GSAP:hover {
   color: green;
   transition: color 0.4s ease-in-out;
+} */
+
+.skills .MC .fab:hover {
+  color: #e6e600;
+}
+
+.skills .WP .fab:hover {
+  color: #00bfff;
+}
+
+.skills .shopify .fab:hover {
+  color: #29a329;
+}
+
+.skills .hubspot .fab:hover {
+  color: #ff751a;
 }
 
 .skills .Git .fab:hover {
@@ -1195,19 +1243,11 @@ select:focus {
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: transparent transparent black transparent;
+  border-color: transparent transparent var(--dark_grey-color) transparent;
 }
 
 .tooltips:hover .tooltiptext {
   visibility: visible;
-}
-
-.social-media {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  width: 100%;
-  margin-top: 1rem;
 }
 
 .social-media .linkedIn a {
