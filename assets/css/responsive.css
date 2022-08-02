@@ -10,7 +10,7 @@
   .greeting {
     position: absolute;
     top: -76%;
-    left: 19% !important;
+    left: 15% !important;
   }
 }
 
@@ -31,6 +31,10 @@
 
   #counterArea .counter_box {
     margin-bottom: 30px;
+  }
+
+  .button-container {
+    justify-content: flex-start;
   }
 }
 
@@ -157,7 +161,8 @@
   }
 
   .hero-box {
-    padding-top: 40px;
+    padding-top: 100px;
+    width: 90%;
   }
 
   .skills {
@@ -378,7 +383,7 @@
   .greeting {
     position: absolute;
     top: -42% !important;
-    left: 13% !important;
+    left: 14% !important;
   }
 }
 
@@ -681,18 +686,30 @@
     line-height: 40px;
   }
 
+  .greeting {
+    position: absolute;
+    top: -90% !important;
+    left: 0% !important;
+  }
+
+  .name {
+    text-align: left !important;
+  }
+
   .skills {
     flex-wrap: wrap;
   }
 
-  .button-container {
-    flex-wrap: wrap;
+  .header_title {
+    text-align: left;
   }
 
-  .greeting {
-    position: absolute;
-    top: -110% !important;
-    left: 5% !important;
+  .short-info {
+    text-align: left !important;
+  }
+
+  .button-container {
+    flex-wrap: wrap;
   }
 }
 
@@ -729,15 +746,15 @@
 
   .greeting {
     position: absolute;
-    top: -134% !important;
-    left: 5% !important;
+    top: -130% !important;
+    left: 0% !important;
   }
 }
 
 @media (max-width: 395px) {
   .greeting {
     position: absolute;
-    top: -64% !important;
-    left: 8% !important;
+    top: -70% !important;
+    left: 0% !important;
   }
 }
