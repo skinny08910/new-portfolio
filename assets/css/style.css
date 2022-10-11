@@ -1169,6 +1169,16 @@ select:focus {
   transition: color 0.4s ease-in-out;
 }
 
+.skills .LM {
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.skills .LM:hover {
+  color: #ff4000;
+  transition: color 0.4s ease-in-out;
+}
+
 /* .skills .GSAP {
   font-weight: 700;
   cursor: pointer;
