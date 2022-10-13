@@ -1179,6 +1179,16 @@ select:focus {
   transition: color 0.4s ease-in-out;
 }
 
+.skills .foundation {
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.skills .foundation:hover {
+  color: #ff4000;
+  transition: color 0.4s ease-in-out;
+}
+
 /* .skills .GSAP {
   font-weight: 700;
   cursor: pointer;
